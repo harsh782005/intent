@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         number?.setOnClickListener {
             try {
                 var intent= Intent(Intent.ACTION_DIAL)
-                intent.setData(Uri.parse("tel:9878145781"))
+                intent.setData(Uri.parse("tel:xxxxxxxxxx"))
                 startActivity(intent)
             }catch (exception : Exception){
                 Toast.makeText(this, "Sorry cannot dial a number", Toast.LENGTH_LONG).show()
@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         }
         btnsms?.setOnClickListener {
             var intent=Intent(Intent.ACTION_SEND)
-            intent.setData(Uri.parse("sms:9874751587"))
+            intent.setData(Uri.parse("sms:xxxxxxxxxx"))
             startActivity(intent)
         }
 
